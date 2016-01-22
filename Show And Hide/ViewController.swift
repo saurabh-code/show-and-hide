@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var blueFlag: UIImageView!
+    @IBOutlet weak var redFlag: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +23,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func hideBlueFlag(sender: UIButton) {
+        blueFlag.hidden = !(blueFlag.hidden)
+    }
+    
+    @IBAction func hideRedFlag(sender: UIButton) {
+        redFlag.hidden = !(redFlag.hidden)
+    }
+    
 
 }
 
